@@ -1,0 +1,221 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="The Harbor - Construyendo ventures desde el Maresme"
+  description="Creamos productos digitales y ofrecemos asesoría tech para startups. Venture builder remoto desde Barcelona."
+  lang="es"
+>
+  <Header lang="es" />
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-blue-50 to-white py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1 text-center lg:text-left">
+          <p class="text-[#1e3a5f] text-sm font-semibold tracking-wider mb-4">THE HARBOR</p>
+          <h1 class="text-4xl md:text-6xl font-bold text-[#1e3a5f] mb-6 leading-tight">
+            Construyendo ventures desde el Maresme
+          </h1>
+          <p class="text-xl text-[#64748b] mb-8 leading-relaxed">
+            Creamos productos digitales y ayudamos a startups a tener éxito. Trabajo remoto desde la costa norte de Barcelona.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a
+              href="#ventures"
+              class="bg-[#3b82f6] hover:bg-[#2563eb] text-white font-semibold px-8 py-4 rounded-lg transition transform hover:-translate-y-1 shadow-lg"
+            >
+              Ver Nuestros Proyectos
+            </a>
+            <a
+              href="#contact"
+              class="border-2 border-[#1e3a5f] text-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white font-semibold px-8 py-4 rounded-lg transition"
+            >
+              Trabajar Juntos
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <div class="relative w-80 h-80">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-50 rounded-full blur-3xl opacity-50"></div>
+            <div class="relative flex items-center justify-center h-full">
+              <span class="text-9xl">⚓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#1e3a5f] mb-4">Dos formas de trabajar juntos</h2>
+        <p class="text-xl text-[#64748b]">Construimos nuestros propios ventures y ayudamos a otros a crecer</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Building Ventures Card -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+          <div class="text-4xl mb-4">🏗️</div>
+          <h3 class="text-2xl font-bold text-[#1e3a5f] mb-4">Construimos Ventures</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            Creamos y desarrollamos nuestros propios productos digitales desde cero. SaaS, plataformas, aplicaciones. De la idea al mercado.
+          </p>
+        </div>
+
+        <!-- Advisory Card -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+          <div class="text-4xl mb-4">💡</div>
+          <h3 class="text-2xl font-bold text-[#1e3a5f] mb-4">Asesoría Tech</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            Ayudamos a startups con estrategia tecnológica, desarrollo de producto y decisiones de arquitectura. CTO as a Service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ventures Portfolio Section -->
+  <section id="ventures" class="py-20 bg-gradient-to-b from-[#1e3a5f] to-[#0f172a] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Nuestros Ventures</h2>
+        <p class="text-xl text-gray-300">Productos digitales que estamos construyendo</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- sanabilis Card -->
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold">sanabilis.me</h3>
+            <span class="bg-green-500/20 text-green-300 text-xs font-semibold px-3 py-1 rounded-full">En Desarrollo</span>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            Plataforma SaaS para gestión de salud. Ayudamos a profesionales sanitarios y pacientes a gestionar información médica de forma segura y eficiente.
+          </p>
+          <a href="https://sanabilis.me" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:text-blue-200 font-medium">
+            Visitar →
+          </a>
+        </div>
+
+        <!-- PLEKO Card -->
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold">PLEKO</h3>
+            <span class="bg-green-500/20 text-green-300 text-xs font-semibold px-3 py-1 rounded-full">En Desarrollo</span>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            Software de gestión de costes para restaurantes. Control de ingredientes, recetas, proveedores y optimización de food cost con IA.
+          </p>
+          <span class="text-gray-400 font-medium">Próximamente</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advisory Services Section -->
+  <section id="advisory" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#1e3a5f] mb-4">Servicios de Asesoría</h2>
+        <p class="text-xl text-[#64748b]">Ayudamos a startups con liderazgo técnico</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Tech Strategy -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold text-[#1e3a5f] mb-4">Estrategia Tecnológica</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            Definimos tu stack tecnológico, arquitectura y roadmap. Decisiones técnicas alineadas con objetivos de negocio.
+          </p>
+        </div>
+
+        <!-- CTO Advisory -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="text-4xl mb-4">👨‍💼</div>
+          <h3 class="text-xl font-bold text-[#1e3a5f] mb-4">CTO as a Service</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            Liderazgo técnico sin contratación. Gestión de equipos, decisiones de producto y scaling de tecnología.
+          </p>
+        </div>
+
+        <!-- Product Development -->
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="text-4xl mb-4">🚀</div>
+          <h3 class="text-xl font-bold text-[#1e3a5f] mb-4">Desarrollo de Producto</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            De la idea al MVP. Diseño, desarrollo y lanzamiento de productos digitales con metodología ágil.
+          </p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a
+          href="#contact"
+          class="inline-block bg-[#3b82f6] hover:bg-[#2563eb] text-white font-semibold px-8 py-4 rounded-lg transition transform hover:-translate-y-1 shadow-lg"
+        >
+          Hablemos de tu proyecto
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-b from-[#1e3a5f] to-[#0f172a] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">¿Listo para empezar?</h2>
+        <p class="text-xl text-gray-300">Hablemos de tu proyecto o contáctanos para colaborar</p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <!-- Schedule Call -->
+          <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center">
+            <div class="text-4xl mb-4">📅</div>
+            <h3 class="text-2xl font-bold mb-3">Agendar llamada</h3>
+            <p class="text-gray-300 mb-6">30 minutos para conocernos y ver cómo podemos ayudarte</p>
+            <a
+              href="https://calendly.com/ricard-theharbor"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-white text-[#1e3a5f] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition"
+            >
+              Ver disponibilidad
+            </a>
+          </div>
+
+          <!-- Send Email -->
+          <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center">
+            <div class="text-4xl mb-4">✉️</div>
+            <h3 class="text-2xl font-bold mb-3">Enviar email</h3>
+            <p class="text-gray-300 mb-6">Escríbenos directamente y te respondemos en 24h</p>
+            <a
+              href="mailto:ricard@theharbor.digital"
+              class="inline-block bg-white text-[#1e3a5f] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition"
+            >
+              ricard@theharbor.digital
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8">
+          <h3 class="text-2xl font-bold text-center mb-6">O envíanos un mensaje</h3>
+          <ContactForm lang="es" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer lang="es" />
+</Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

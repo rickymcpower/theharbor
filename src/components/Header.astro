@@ -1,0 +1,106 @@
+---
+interface Props {
+  lang: 'es' | 'en' | 'ca';
+}
+
+const { lang } = Astro.props;
+
+const translations = {
+  es: {
+    ventures: 'Proyectos',
+    advisory: 'Asesoría',
+    about: 'Nosotros',
+    contact: 'Contacto',
+  },
+  en: {
+    ventures: 'Ventures',
+    advisory: 'Advisory',
+    about: 'About',
+    contact: 'Contact',
+  },
+  ca: {
+    ventures: 'Projectes',
+    advisory: 'Assessoria',
+    about: 'Nosaltres',
+    contact: 'Contacte',
+  },
+};
+
+const t = translations[lang];
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href={`/${lang}`} class="flex items-center gap-2">
+        <span class="text-2xl">⚓</span>
+        <span class="text-xl font-bold text-[#1e3a5f] tracking-wide">THE HARBOR</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href={`/${lang}#ventures`} class="text-[#64748b] hover:text-[#1e3a5f] transition">{t.ventures}</a>
+        <a href={`/${lang}#advisory`} class="text-[#64748b] hover:text-[#1e3a5f] transition">{t.advisory}</a>
+        <a href={`/${lang}#contact`} class="text-[#64748b] hover:text-[#1e3a5f] transition">{t.contact}</a>
+      </nav>
+
+      <!-- Language Switcher -->
+      <div class="hidden md:flex items-center gap-2">
+        <a
+          href="/es"
+          class={`px-3 py-1 rounded text-sm font-medium transition ${lang === 'es' ? 'bg-[#1e3a5f] text-white' : 'text-[#64748b] hover:bg-gray-100'}`}
+        >
+          ES
+        </a>
+        <a
+          href="/en"
+          class={`px-3 py-1 rounded text-sm font-medium transition ${lang === 'en' ? 'bg-[#1e3a5f] text-white' : 'text-[#64748b] hover:bg-gray-100'}`}
+        >
+          EN
+        </a>
+        <a
+          href="/ca"
+          class={`px-3 py-1 rounded text-sm font-medium transition ${lang === 'ca' ? 'bg-[#1e3a5f] text-white' : 'text-[#64748b] hover:bg-gray-100'}`}
+        >
+          CA
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden p-2 text-[#1e3a5f]"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+    <div class="px-4 py-4 space-y-3">
+      <a href={`/${lang}#ventures`} class="block text-[#64748b] hover:text-[#1e3a5f] py-2">{t.ventures}</a>
+      <a href={`/${lang}#advisory`} class="block text-[#64748b] hover:text-[#1e3a5f] py-2">{t.advisory}</a>
+      <a href={`/${lang}#contact`} class="block text-[#64748b] hover:text-[#1e3a5f] py-2">{t.contact}</a>
+      <div class="flex gap-2 pt-2">
+        <a href="/es" class={`px-3 py-1 rounded text-sm font-medium ${lang === 'es' ? 'bg-[#1e3a5f] text-white' : 'bg-gray-100 text-[#64748b]'}`}>ES</a>
+        <a href="/en" class={`px-3 py-1 rounded text-sm font-medium ${lang === 'en' ? 'bg-[#1e3a5f] text-white' : 'bg-gray-100 text-[#64748b]'}`}>EN</a>
+        <a href="/ca" class={`px-3 py-1 rounded text-sm font-medium ${lang === 'ca' ? 'bg-[#1e3a5f] text-white' : 'bg-gray-100 text-[#64748b]'}`}>CA</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

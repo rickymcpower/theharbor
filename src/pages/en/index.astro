@@ -1,0 +1,185 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="The Harbor - Building ventures from Maresme"
+  description="We create digital products and offer tech advisory for startups. Remote venture builder from Barcelona."
+  lang="en"
+>
+  <Header lang="en" />
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-blue-50 to-white py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1 text-center lg:text-left">
+          <p class="text-[#1e3a5f] text-sm font-semibold tracking-wider mb-4">THE HARBOR</p>
+          <h1 class="text-4xl md:text-6xl font-bold text-[#1e3a5f] mb-6 leading-tight">
+            Building ventures from Maresme
+          </h1>
+          <p class="text-xl text-[#64748b] mb-8 leading-relaxed">
+            We create digital products and guide startups to success. Remote-first from Barcelona's northern coast.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="#ventures" class="bg-[#3b82f6] hover:bg-[#2563eb] text-white font-semibold px-8 py-4 rounded-lg transition transform hover:-translate-y-1 shadow-lg">
+              View Our Ventures
+            </a>
+            <a href="#contact" class="border-2 border-[#1e3a5f] text-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white font-semibold px-8 py-4 rounded-lg transition">
+              Work With Us
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <div class="relative w-80 h-80">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-50 rounded-full blur-3xl opacity-50"></div>
+            <div class="relative flex items-center justify-center h-full">
+              <span class="text-9xl">⚓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#1e3a5f] mb-4">Two ways to work together</h2>
+        <p class="text-xl text-[#64748b]">We build our own ventures and help others grow</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+          <div class="text-4xl mb-4">🏗️</div>
+          <h3 class="text-2xl font-bold text-[#1e3a5f] mb-4">Building Ventures</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            We create and develop our own digital products from scratch. SaaS, platforms, applications. From idea to market.
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+          <div class="text-4xl mb-4">💡</div>
+          <h3 class="text-2xl font-bold text-[#1e3a5f] mb-4">Tech Advisory</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            We help startups with tech strategy, product development, and architecture decisions. CTO as a Service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ventures Portfolio Section -->
+  <section id="ventures" class="py-20 bg-gradient-to-b from-[#1e3a5f] to-[#0f172a] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Our Ventures</h2>
+        <p class="text-xl text-gray-300">Digital products we're building</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold">sanabilis.me</h3>
+            <span class="bg-green-500/20 text-green-300 text-xs font-semibold px-3 py-1 rounded-full">In Development</span>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            Health management SaaS platform. We help healthcare professionals and patients manage medical information securely and efficiently.
+          </p>
+          <a href="https://sanabilis.me" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:text-blue-200 font-medium">Visit →</a>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold">PLEKO</h3>
+            <span class="bg-green-500/20 text-green-300 text-xs font-semibold px-3 py-1 rounded-full">In Development</span>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            Restaurant cost management software. Ingredient control, recipes, suppliers, and AI-powered food cost optimization.
+          </p>
+          <span class="text-gray-400 font-medium">Coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advisory Services Section -->
+  <section id="advisory" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#1e3a5f] mb-4">Advisory Services</h2>
+        <p class="text-xl text-[#64748b]">We help startups with technical leadership</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold text-[#1e3a5f] mb-4">Tech Strategy</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            We define your tech stack, architecture, and roadmap. Technical decisions aligned with business goals.
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="text-4xl mb-4">👨‍💼</div>
+          <h3 class="text-xl font-bold text-[#1e3a5f] mb-4">CTO as a Service</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            Technical leadership without hiring. Team management, product decisions, and technology scaling.
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="text-4xl mb-4">🚀</div>
+          <h3 class="text-xl font-bold text-[#1e3a5f] mb-4">Product Development</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            From idea to MVP. Design, development and launch of digital products with agile methodology.
+          </p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#contact" class="inline-block bg-[#3b82f6] hover:bg-[#2563eb] text-white font-semibold px-8 py-4 rounded-lg transition transform hover:-translate-y-1 shadow-lg">
+          Let's talk about your project
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-b from-[#1e3a5f] to-[#0f172a] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Ready to start?</h2>
+        <p class="text-xl text-gray-300">Let's talk about your project or reach out to collaborate</p>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center">
+            <div class="text-4xl mb-4">📅</div>
+            <h3 class="text-2xl font-bold mb-3">Schedule a call</h3>
+            <p class="text-gray-300 mb-6">30 minutes to meet and see how we can help you</p>
+            <a href="https://calendly.com/ricard-theharbor" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-[#1e3a5f] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition">
+              See availability
+            </a>
+          </div>
+          <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center">
+            <div class="text-4xl mb-4">✉️</div>
+            <h3 class="text-2xl font-bold mb-3">Send email</h3>
+            <p class="text-gray-300 mb-6">Write to us directly and we'll respond within 24h</p>
+            <a href="mailto:ricard@theharbor.digital" class="inline-block bg-white text-[#1e3a5f] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition">
+              ricard@theharbor.digital
+            </a>
+          </div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8">
+          <h3 class="text-2xl font-bold text-center mb-6">Or send us a message</h3>
+          <ContactForm lang="en" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer lang="en" />
+</Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

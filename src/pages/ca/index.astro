@@ -1,0 +1,185 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="The Harbor - Construint ventures des del Maresme"
+  description="Creem productes digitals i oferim assessoria tech per a startups. Venture builder remot des de Barcelona."
+  lang="ca"
+>
+  <Header lang="ca" />
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-blue-50 to-white py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1 text-center lg:text-left">
+          <p class="text-[#1e3a5f] text-sm font-semibold tracking-wider mb-4">THE HARBOR</p>
+          <h1 class="text-4xl md:text-6xl font-bold text-[#1e3a5f] mb-6 leading-tight">
+            Construint ventures des del Maresme
+          </h1>
+          <p class="text-xl text-[#64748b] mb-8 leading-relaxed">
+            Creem productes digitals i ajudem startups a tenir èxit. Treball remot des de la costa nord de Barcelona.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="#ventures" class="bg-[#3b82f6] hover:bg-[#2563eb] text-white font-semibold px-8 py-4 rounded-lg transition transform hover:-translate-y-1 shadow-lg">
+              Veure els Nostres Projectes
+            </a>
+            <a href="#contact" class="border-2 border-[#1e3a5f] text-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white font-semibold px-8 py-4 rounded-lg transition">
+              Treballar Junts
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <div class="relative w-80 h-80">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-50 rounded-full blur-3xl opacity-50"></div>
+            <div class="relative flex items-center justify-center h-full">
+              <span class="text-9xl">⚓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#1e3a5f] mb-4">Dues maneres de treballar junts</h2>
+        <p class="text-xl text-[#64748b]">Construïm els nostres propis ventures i ajudem altres a créixer</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+          <div class="text-4xl mb-4">🏗️</div>
+          <h3 class="text-2xl font-bold text-[#1e3a5f] mb-4">Construïm Ventures</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            Creem i desenvolupem els nostres propis productes digitals des de zero. SaaS, plataformes, aplicacions. De la idea al mercat.
+          </p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition transform hover:-translate-y-1">
+          <div class="text-4xl mb-4">💡</div>
+          <h3 class="text-2xl font-bold text-[#1e3a5f] mb-4">Assessoria Tech</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            Ajudem startups amb estratègia tecnològica, desenvolupament de producte i decisions d'arquitectura. CTO as a Service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ventures Portfolio Section -->
+  <section id="ventures" class="py-20 bg-gradient-to-b from-[#1e3a5f] to-[#0f172a] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Els Nostres Ventures</h2>
+        <p class="text-xl text-gray-300">Productes digitals que estem construint</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold">sanabilis.me</h3>
+            <span class="bg-green-500/20 text-green-300 text-xs font-semibold px-3 py-1 rounded-full">En Desenvolupament</span>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            Plataforma SaaS per a gestió de salut. Ajudem professionals sanitaris i pacients a gestionar informació mèdica de forma segura i eficient.
+          </p>
+          <a href="https://sanabilis.me" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:text-blue-200 font-medium">Visitar →</a>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold">PLEKO</h3>
+            <span class="bg-green-500/20 text-green-300 text-xs font-semibold px-3 py-1 rounded-full">En Desenvolupament</span>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            Software de gestió de costos per a restaurants. Control d'ingredients, receptes, proveïdors i optimització de food cost amb IA.
+          </p>
+          <span class="text-gray-400 font-medium">Properament</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advisory Services Section -->
+  <section id="advisory" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#1e3a5f] mb-4">Serveis d'Assessoria</h2>
+        <p class="text-xl text-[#64748b]">Ajudem startups amb lideratge tècnic</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold text-[#1e3a5f] mb-4">Estratègia Tecnològica</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            Definim el teu stack tecnològic, arquitectura i roadmap. Decisions tècniques alineades amb objectius de negoci.
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="text-4xl mb-4">👨‍💼</div>
+          <h3 class="text-xl font-bold text-[#1e3a5f] mb-4">CTO as a Service</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            Lideratge tècnic sense contractació. Gestió d'equips, decisions de producte i scaling de tecnologia.
+          </p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition">
+          <div class="text-4xl mb-4">🚀</div>
+          <h3 class="text-xl font-bold text-[#1e3a5f] mb-4">Desenvolupament de Producte</h3>
+          <p class="text-[#64748b] leading-relaxed">
+            De la idea a l'MVP. Disseny, desenvolupament i llançament de productes digitals amb metodologia àgil.
+          </p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#contact" class="inline-block bg-[#3b82f6] hover:bg-[#2563eb] text-white font-semibold px-8 py-4 rounded-lg transition transform hover:-translate-y-1 shadow-lg">
+          Parlem del teu projecte
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-b from-[#1e3a5f] to-[#0f172a] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Preparat per començar?</h2>
+        <p class="text-xl text-gray-300">Parlem del teu projecte o contacta'ns per col·laborar</p>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center">
+            <div class="text-4xl mb-4">📅</div>
+            <h3 class="text-2xl font-bold mb-3">Agendar trucada</h3>
+            <p class="text-gray-300 mb-6">30 minuts per conèixer-nos i veure com podem ajudar-te</p>
+            <a href="https://calendly.com/ricard-theharbor" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-[#1e3a5f] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition">
+              Veure disponibilitat
+            </a>
+          </div>
+          <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center">
+            <div class="text-4xl mb-4">✉️</div>
+            <h3 class="text-2xl font-bold mb-3">Enviar email</h3>
+            <p class="text-gray-300 mb-6">Escriu-nos directament i et responem en 24h</p>
+            <a href="mailto:ricard@theharbor.digital" class="inline-block bg-white text-[#1e3a5f] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition">
+              ricard@theharbor.digital
+            </a>
+          </div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8">
+          <h3 class="text-2xl font-bold text-center mb-6">O envia'ns un missatge</h3>
+          <ContactForm lang="ca" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer lang="ca" />
+</Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

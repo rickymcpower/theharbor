@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Spanish (default) -->
+  <url>
+    <loc>https://theharbor.digital/es</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharbor.digital/en"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://theharbor.digital/ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theharbor.digital/es"/>
+  </url>
+
+  <!-- English -->
+  <url>
+    <loc>https://theharbor.digital/en</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharbor.digital/en"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://theharbor.digital/ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theharbor.digital/es"/>
+  </url>
+
+  <!-- Catalan -->
+  <url>
+    <loc>https://theharbor.digital/ca</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://theharbor.digital/en"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://theharbor.digital/ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://theharbor.digital/es"/>
+  </url>
+</urlset>

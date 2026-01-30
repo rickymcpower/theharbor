@@ -1,4 +1,7 @@
 ---
+// Make this page server-rendered to access request headers
+export const prerender = false;
+
 // Detect browser language and redirect accordingly
 const acceptLanguage = Astro.request.headers.get('accept-language') || '';
 

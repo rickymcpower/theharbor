@@ -1,0 +1,21 @@
+---
+// Detect browser language and redirect accordingly
+const acceptLanguage = Astro.request.headers.get('accept-language') || '';
+
+// Parse accept-language header to find the preferred language
+// Example: "es-ES,es;q=0.9,en;q=0.8,ca;q=0.7"
+const preferredLanguage = acceptLanguage
+  .split(',')
+  .map(lang => {
+    const [code, priority] = lang.split(';');
+    const langCode = code.trim().split('-')[0].toLowerCase();
+    const q = priority ? parseFloat(priority.split('=')[1]) : 1.0;
+    return { code: langCode, priority: q };
+  })
+  .sort((a, b) => b.priority - a.priority)
+  .find(lang => ['es', 'en', 'ca'].includes(lang.code));
+
+// Redirect to detected language or default to Spanish
+const targetLang = preferredLanguage?.code || 'es';
+return Astro.redirect(`/${targetLang}`);
+---

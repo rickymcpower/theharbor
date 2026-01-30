@@ -35,7 +35,9 @@ export const POST: APIRoute = async ({ request }) => {
     });
 
     // Enviar email
-    await transporter.sendMail({
+    console.log('Intentando enviar email a hello@theharbor.digital desde', import.meta.env.GMAIL_USER);
+
+    const info = await transporter.sendMail({
       from: `"The Harbor Contact Form" <${import.meta.env.GMAIL_USER}>`,
       to: 'hello@theharbor.digital',
       replyTo: email,
@@ -93,6 +95,9 @@ Mensaje:
 ${message}
       `,
     });
+
+    console.log('Email enviado exitosamente. MessageId:', info.messageId);
+    console.log('Info completa:', JSON.stringify(info));
 
     return new Response(
       JSON.stringify({ success: true, message: 'Email enviado correctamente' }),

@@ -3,11 +3,12 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import ContactForm from '../../components/ContactForm.astro';
 import Footer from '../../components/Footer.astro';
+import HarborIllustration from '../../components/HarborIllustration.astro';
 ---
 
 <Layout
   title="The Harbor - Building ventures from Maresme"
-  description="We create digital products and offer tech advisory for startups. Remote venture builder from Barcelona."
+  description="We build scalable products and advise on critical tech decisions. Strategy aligned with business: better time-to-market, less technical debt, metrics that matter."
   lang="en"
 >
   <Header lang="en" />
@@ -22,7 +23,7 @@ import Footer from '../../components/Footer.astro';
             Building ventures from Maresme
           </h1>
           <p class="text-xl text-[#64748b] mb-8 leading-relaxed">
-            We create digital products and guide startups to success. Remote-first from Barcelona's northern coast.
+            We build scalable products and advise on critical tech decisions. Strategy aligned with business: better time-to-market, less technical debt, metrics that matter.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a href="#ventures" class="bg-[#3b82f6] hover:bg-[#2563eb] text-white font-semibold px-8 py-4 rounded-lg transition transform hover:-translate-y-1 shadow-lg">
@@ -34,11 +35,8 @@ import Footer from '../../components/Footer.astro';
           </div>
         </div>
         <div class="flex-1 flex justify-center">
-          <div class="relative w-80 h-80">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-50 rounded-full blur-3xl opacity-50"></div>
-            <div class="relative flex items-center justify-center h-full">
-              <span class="text-9xl">⚓</span>
-            </div>
+          <div class="w-full max-w-md h-96">
+            <HarborIllustration />
           </div>
         </div>
       </div>
@@ -148,27 +146,9 @@ import Footer from '../../components/Footer.astro';
         <h2 class="text-4xl font-bold mb-4">Ready to start?</h2>
         <p class="text-xl text-gray-300">Let's talk about your project or reach out to collaborate</p>
       </div>
-      <div class="max-w-4xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-          <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center">
-            <div class="text-4xl mb-4">📅</div>
-            <h3 class="text-2xl font-bold mb-3">Schedule a call</h3>
-            <p class="text-gray-300 mb-6">30 minutes to meet and see how we can help you</p>
-            <a href="https://calendly.com/ricard-theharbor" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-[#1e3a5f] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition">
-              See availability
-            </a>
-          </div>
-          <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center">
-            <div class="text-4xl mb-4">✉️</div>
-            <h3 class="text-2xl font-bold mb-3">Send email</h3>
-            <p class="text-gray-300 mb-6">Write to us directly and we'll respond within 24h</p>
-            <a href="mailto:ricard@theharbor.digital" class="inline-block bg-white text-[#1e3a5f] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition">
-              ricard@theharbor.digital
-            </a>
-          </div>
-        </div>
-        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8">
-          <h3 class="text-2xl font-bold text-center mb-6">Or send us a message</h3>
+      <div class="max-w-2xl mx-auto">
+        <!-- Contact Form -->
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 md:p-12">
           <ContactForm lang="en" />
         </div>
       </div>

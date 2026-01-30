@@ -3,11 +3,12 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import ContactForm from '../../components/ContactForm.astro';
 import Footer from '../../components/Footer.astro';
+import HarborIllustration from '../../components/HarborIllustration.astro';
 ---
 
 <Layout
   title="The Harbor - Construint ventures des del Maresme"
-  description="Creem productes digitals i oferim assessoria tech per a startups. Venture builder remot des de Barcelona."
+  description="Construïm productes escalables i assessorem en decisions tech crítiques. Estratègia alineada amb negoci: millor time-to-market, menys deute tècnic, mètriques que importen."
   lang="ca"
 >
   <Header lang="ca" />
@@ -22,7 +23,7 @@ import Footer from '../../components/Footer.astro';
             Construint ventures des del Maresme
           </h1>
           <p class="text-xl text-[#64748b] mb-8 leading-relaxed">
-            Creem productes digitals i ajudem startups a tenir èxit. Treball remot des de la costa nord de Barcelona.
+            Construïm productes escalables i assessorem en decisions tech crítiques. Estratègia alineada amb negoci: millor time-to-market, menys deute tècnic, mètriques que importen.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a href="#ventures" class="bg-[#3b82f6] hover:bg-[#2563eb] text-white font-semibold px-8 py-4 rounded-lg transition transform hover:-translate-y-1 shadow-lg">
@@ -34,11 +35,8 @@ import Footer from '../../components/Footer.astro';
           </div>
         </div>
         <div class="flex-1 flex justify-center">
-          <div class="relative w-80 h-80">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-50 rounded-full blur-3xl opacity-50"></div>
-            <div class="relative flex items-center justify-center h-full">
-              <span class="text-9xl">⚓</span>
-            </div>
+          <div class="w-full max-w-md h-96">
+            <HarborIllustration />
           </div>
         </div>
       </div>
@@ -148,27 +146,9 @@ import Footer from '../../components/Footer.astro';
         <h2 class="text-4xl font-bold mb-4">Preparat per començar?</h2>
         <p class="text-xl text-gray-300">Parlem del teu projecte o contacta'ns per col·laborar</p>
       </div>
-      <div class="max-w-4xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-          <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center">
-            <div class="text-4xl mb-4">📅</div>
-            <h3 class="text-2xl font-bold mb-3">Agendar trucada</h3>
-            <p class="text-gray-300 mb-6">30 minuts per conèixer-nos i veure com podem ajudar-te</p>
-            <a href="https://calendly.com/ricard-theharbor" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-[#1e3a5f] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition">
-              Veure disponibilitat
-            </a>
-          </div>
-          <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 text-center">
-            <div class="text-4xl mb-4">✉️</div>
-            <h3 class="text-2xl font-bold mb-3">Enviar email</h3>
-            <p class="text-gray-300 mb-6">Escriu-nos directament i et responem en 24h</p>
-            <a href="mailto:ricard@theharbor.digital" class="inline-block bg-white text-[#1e3a5f] hover:bg-gray-100 font-semibold px-6 py-3 rounded-lg transition">
-              ricard@theharbor.digital
-            </a>
-          </div>
-        </div>
-        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8">
-          <h3 class="text-2xl font-bold text-center mb-6">O envia'ns un missatge</h3>
+      <div class="max-w-2xl mx-auto">
+        <!-- Contact Form -->
+        <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 md:p-12">
           <ContactForm lang="ca" />
         </div>
       </div>

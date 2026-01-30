@@ -1,4 +1,6 @@
 ---
+import Logo from './Logo.astro';
+
 interface Props {
   lang: 'es' | 'en' | 'ca';
 }
@@ -34,9 +36,8 @@ const currentPath = Astro.url.pathname;
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-20">
       <!-- Logo -->
-      <a href={`/${lang}`} class="flex items-center gap-2">
-        <span class="text-2xl">⚓</span>
-        <span class="text-xl font-bold text-[#1e3a5f] tracking-wide">THE HARBOR</span>
+      <a href={`/${lang}`}>
+        <Logo variant="full" color="dark" />
       </a>
 
       <!-- Desktop Navigation -->

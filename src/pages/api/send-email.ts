@@ -37,7 +37,7 @@ export const POST: APIRoute = async ({ request }) => {
     // Enviar email
     await transporter.sendMail({
       from: `"The Harbor Contact Form" <${import.meta.env.GMAIL_USER}>`,
-      to: import.meta.env.GMAIL_USER,
+      to: 'hello@theharbor.digital',
       replyTo: email,
       subject: `[The Harbor] Nuevo mensaje de ${name}`,
       html: `
